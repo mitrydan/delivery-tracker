@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+
+  delivery.state.api:
+    image: delivery.state.api-1.0.0
+    build:
+      context: .
+      dockerfile: src/Delivery.State.Api/Dockerfile
+
+  delivery.tracking.api:
+    image: delivery.tracking.api-1.0.0
+    build:
+      context: .
+      dockerfile: src/Delivery.Tracking.Api/Dockerfile
+
